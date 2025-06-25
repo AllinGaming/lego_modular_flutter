@@ -1,0 +1,22 @@
+name: design_system
+description: Design system for Lego modular app.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies: 
+  build_runner: ^2.4.7
+
+targets:
+  $default:
+    builders:
+      injectable_generator:injectable_builder:
+        enabled: false
+      injectable_generator:injectable_config_builder:
+        enabled: false

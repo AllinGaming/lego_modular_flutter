@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: lego_list,lego_single
+dependency_overrides:
+  lego_list:
+    path: ..\\..\\feature\\lego_list
+  lego_single:
+    path: ..\\..\\feature\\lego_single

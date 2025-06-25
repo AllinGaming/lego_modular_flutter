@@ -1,0 +1,10 @@
+# melos_managed_dependency_overrides: design_system,lego_list,lego_navigation,lego_single
+dependency_overrides:
+  design_system:
+    path: ..\\..\\core\\design_system
+  lego_list:
+    path: ..\\..\\feature\\lego_list
+  lego_navigation:
+    path: ..\\lego_navigation
+  lego_single:
+    path: ..\\..\\feature\\lego_single

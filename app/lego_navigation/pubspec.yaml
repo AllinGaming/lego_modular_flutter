@@ -1,0 +1,23 @@
+name: lego_navigation
+description: App-level navigation using auto_route.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  auto_route: ^10.1.0+1
+  lego_list:
+    path: ../../feature/lego_list
+  lego_single:
+    path: ../../feature/lego_single
+  injectable: any
+  get_it: any
+
+dev_dependencies:
+  auto_route_generator: ^10.1.0+1
+  build_runner: ^2.4.7
+  injectable_generator: any

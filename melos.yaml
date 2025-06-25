@@ -1,0 +1,21 @@
+name: lego_modular_fixed
+packages:
+  - app/**
+  - core/**
+  - feature/**
+
+scripts:
+  bootstrap: melos bootstrap
+  build: |
+    melos exec -c 1 -- dart run build_runner build --delete-conflicting-outputs
+  clean: |
+    melos exec -c 1 -- flutter clean
+  run: |
+    melos exec -c 1 --scope=lego_app -- flutter run -d chrome
+  test:
+    run: |
+      melos exec --dir-exists=test -- flutter test
+
+
+ide:
+  intellij: true
